@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        
+        <style>
+            #kv{
+                width: 40%;
+                height: 40%;
+                background-color: red;
+            }
+
+            #kryg{
+                width: 40%;
+                height: 40%;
+                border-radius: 50%;
+                background-color: yellow;
+                margin-top: 20px;
+            }
+        </style>
+    
+          
+    </head>
+    
+    
+    <body>
+       
+        
+        
+        
+        
+        <div id="kv">
+            
+        </div>
+        
+        <div id="kryg">
+            
+        </div>
+      <script>
+          //обработчик клика
+          $("#kv").click(function(){alert("квадрата клик");});
+          //вызов обработчика другого элемента
+          $("#kryg").click(function(){$("#kv").click();});
+        </script>
+    </body>
+    
+</html>
